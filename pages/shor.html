@@ -1,0 +1,388 @@
+<head>
+    <title>Shor's Algorithm</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yhe5mma.css">
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/division.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/browsers.js"></script>
+</head>
+
+<div class="header">
+    <div class="typewriter">
+    <h1>Shor's Algorithm</h1>
+    </div>
+</div>
+
+<div class="logo">
+    <a href="../index.html">
+        <img src="../img/Final-Logo.png" height="100px">
+    </a>
+</div>
+
+<ul class="navigation">
+    <li><a href="../index.html" class="three-d">
+            Home
+            <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+    <li><a href="about.html" class="three-d">
+            About
+            <span class="three"><span class="front">About</span><span class="back">About</span></span>
+        </a></li>
+    <li><a href="#Resources" class="three-d">
+            Resources
+            <span class="three"><span class="front">Resources</span><span class="back">Resources</span></span>
+        </a>
+        <ul>
+            <li><a href="history.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a>
+                <ul class="side-dropdown">
+                    <li><a href="enigma.html" class="three-d">
+                            Enigma
+                            <span class="three"><span class="front">Enigma</span><span class="back">Enigma</span></span>
+                        </a></li>
+                    <li><a href="ww2.html" class="three-d">
+                            WWII
+                            <span class="three"><span class="front">WWII</span><span class="back">WWII</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+                </a>
+                <ul class="side-dropdown1">
+                    <li><a href="cryptowars1.html" class="three-d">
+                            The Beginning
+                            <span class="three"><span class="front">The Beginning</span><span class="back">The
+                                    Beginning</span></span>
+                        </a></li>
+                    <li><a href="cryptowars2.html" class="three-d">
+                            The Internet
+                            <span class="three"><span class="front">The Internet</span><span class="back">The
+                                    Internet</span></span>
+                        </a></li>
+                    <li><a href="cryptowars3.html" class="three-d">
+                            U.S. Government
+                            <span class="three"><span class="front">U.S. Government</span><span class="back">U.S.
+                                    Government</span></span>
+                        </a></li>
+                    <li><a href="cryptowars4.html" class="three-d">
+                            Cracking DES
+                            <span class="three"><span class="front">Cracking DES</span><span class="back">Cracking
+                                    DES</span></span>
+                        </a></li>
+                    <li><a href="cryptowars5.html" class="three-d">
+                            Ongoing War
+                            <span class="three"><span class="front">Ongoing War</span><span class="back">Ongoing
+                                    War</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="cryptosystem.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+            </a>
+            <ul class="side-dropdown2">
+                <li><a href="symmetricKey.html" class="three-d">
+                        Symmetric Key
+                        <span class="three"><span class="front">Symmetric Key</span><span class="back">Symmetric Key</span></span>
+                    </a></li>
+                    <li><a href="asymmetricKey.html" class="three-d">
+                        Asymmetric Key
+                        <span class="three"><span class="front">Asymmetric Key</span><span class="back">Asymmetric Key</span></span>
+                    </a></li>
+                <li><a href="principles.html" class="three-d">
+                        Kerckhoff & Shannon
+                        <span class="three"><span class="front">Kerckhoff & Shannon</span><span class="back">Kerckhoff & Shannon</span></span>
+                    </a></li>
+            </ul>
+        </li>
+            <li><a href="division.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a>
+                <ul class="side-dropdown3">
+                    <li><a href="euclid.html" class="three-d">
+                            Euclid's Algorithm
+                            <span class="three"><span class="front">Euclid's Algorithm</span><span class="back">Euclid's
+                                    Algorithm</span></span>
+                        </a></li>
+                    <li><a href="bezout.html" class="three-d">
+                            Bezout's Identity
+                            <span class="three"><span class="front">Bezout's Identity</span><span class="back">Bezout's
+                                    Identity</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="rsa.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+                </a>
+                <ul class="side-dropdown4">
+                    <li><a href="primes.html" class="three-d">
+                            Primes
+                            <span class="three"><span class="front">Primes</span><span class="back">Primes</span></span>
+                        </a></li>
+                    <li><a href="modularArithmetic.html" class="three-d">
+                            Modular Arithmetic
+                            <span class="three"><span class="front">Modular Arithmetic</span><span class="back">Modular
+                                    Arithmetic</span></span>
+                        </a></li>
+                    <li><a href="chineseRemainder.html" class="three-d">
+                            Chinese Remainder Theorem
+                            <span class="three"><span class="front">Chinese Remainder Theorem</span><span
+                                    class="back">Chinese Remainder Theorem</span></span>
+                        </a></li>
+                        <li><a href="euler.html" class="three-d">
+                            Euler's Theorem
+                            <span class="three"><span class="front">Euler's Theorem</span><span
+                                    class="back">Euler's Theorem</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="ellipticCurve.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+            </a>
+            <ul class="side-dropdown5">
+                
+            </ul>
+        </li>
+            <li><a href="#" class="three-d">
+                Algorithms
+                <span class="three"><span class="front">Algorithms</span><span class="back">Algorithms</span></span>
+            </a>
+            <ul class="side-dropdown6">
+                <li><a href="aes.html" class="three-d">
+                    AES
+                    <span class="three"><span class="front">AES</span><span class="back">AES</span></span>
+                </a></li>
+                <li><a href="diffieHellman.html" class="three-d">
+                        Diffie Hellman
+                        <span class="three"><span class="front">Diffie Hellman</span><span class="back">Diffie Hellman</span></span>
+                    </a></li>
+                <li><a href="shamir.html" class="three-d">
+                        Shamir's Secret
+                        <span class="three"><span class="front">Shamir's Secret</span><span class="back">Shamir's Secret</span></span>
+                    </a></li>
+                    <li><a href="shor.html" class="three-d">
+                        Shor's Algorithm
+                        <span class="three"><span class="front">Shor's Algorithm</span><span class="back">Shor's Algorithm</span></span>
+                    </a></li>
+            </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                Programming
+                <span class="three"><span class="front">Programming</span><span class="back">Programming</span></span>
+            </a>
+            <ul class="side-dropdown7">
+                <li><a href="branchlessProgramming.html" class="three-d">
+                        Branchless Programming
+                        <span class="three"><span class="front">Branchless Programming</span><span class="back">Branchless Programming</span></span>
+                    </a></li>
+                    <li><a href="programRsa.html" class="three-d">
+                        RSA in Python
+                        <span class="three"><span class="front">RSA in Python</span><span class="back">RSA in Python</span></span>
+                    </a></li>
+                    <li><a href="programAES.html" class="three-d">
+                        AES in Python
+                        <span class="three"><span class="front">AES in Python</span><span class="back">AES in Python</span></span>
+                    </a></li>
+                    <li><a href="programEnigma.html" class="three-d">
+                        Enigma in Python
+                        <span class="three"><span class="front">Enigma in Python</span><span class="back">Enigma in Python</span></span>
+                    </a></li>
+                    <li><a href="quantum.html" class="three-d">
+                        Quantum
+                        <span class="three"><span class="front">Quantum</span><span class="back">Quantum</span></span>
+                    </a></li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#Quizzes" class="three-d">
+            Quizzes
+            <span class="three"><span class="front">Quizzes</span><span class="back">Quizzes</span></span>
+        </a>
+        <ul>
+            <li><a href="historyQuiz.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a></li>
+            <li><a href="cryptoWarsQuiz.html" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+            </a></li>
+            <li><a href="cryptosystemsQuiz.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+        </a></li>
+            <li><a href="divisionQuiz.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a></li>
+            <li><a href="rsaQuiz.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+            </a></li>
+            <li><a href="ellipticCurveQuiz.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+        </a></li>
+            <li><a href="algorithmsQuiz.html" class="three-d">
+                Other Algorithms
+                <span class="three"><span class="front">Other Algorithms</span><span class="back">Other Algorithms</span></span>
+        </a></li>
+        <li><a href="quantumQuiz.html" class="three-d">
+            Quantum Quiz
+            <span class="three"><span class="front">Quantum Quiz</span><span class="back">Quantum Quiz</span></span>
+    </a></li>
+        </ul>
+    </li>
+    <li><a href="support.html" class="three-d">
+            Support
+            <span class="three"><span class="front">Support</span><span class="back">Support</span></span>
+        </a></li>
+    <li><a href="contact.html" class="three-d">
+            Contact
+            <span class="three"><span class="front">Contact</span><span class="back">Contact</span></span>
+        </a></li>
+</ul>
+
+<div class="box">
+    <body>
+        <h2>Shor's Algorithm</h2>
+
+        
+        <div class="text-box">
+            <p>The fundamental property of RSA encryption is that it relies on it being extremely difficult to find prime factors of large numbers. This is because there really aren't many methods except trial and error to find the correct prime factors. Although this is difficult (and hence why RSA is an effective algorithm to use today) it is not impossible to break. With computer power constantly growing, it may even be possible to crack this algorithm on a classical computer in the future. However, by using a special algorithm called <i>Shor’s algorithm</i>, quantum computers have the capability to find these prime factors, and hence break the RSA algorithm, in a matter of seconds.
+                
+So how does it work?
+                
+Let N be a large number that's composed of 2 prime factors, p and q where p,q > 2. 
+                
+Shor's Algorithm can be split into 2 parts in which the 1st part is manageable on a classical computer, and the 2nd part requires a quantum algorithm. The core idea of the 1st part is to start with a random guess, g, which will most likely be nowhere near to the correct solution. From this however, we can then try another guess which will be a lot more accurate.
+                
+Before looking at the process, there's some key ideas to understand.
+                
+Using an important theorem called <i>Fermat's little theorem</i>, we can say that for any 2 coprime numbers, A and B, if you multiply A by itself enough times, it will eventually be 1 less than some multiple of B, i.e A<sup>r</sup> = tB + 1 where r,t ∈ ℕ.
+For example, if A = 3 and B = 5 then we can write 3<sup>4</sup> = 81 = 16(5) + 1.
+                
+Consider if A<sup>r</sup> = tB + 1 and A<sup>x</sup> = t<sub>1</sub>B + m (where x ≠ r and B > m > 1) then 
+<div class="calculation">A<sup>r+x</sup> = (tB + 1)(t<sub>1</sub>B + m) 
+    = (tt<sub>1</sub>B + t<sub>1</sub> + mt)B + m 
+    = t<sub>2</sub>B + m (where t<sub>2</sub> = tt<sub>1</sub>B + t<sub>1</sub> + m  t ∈ ℕ). </div>
+Similarly, A<sup>2r+x</sup> = t<sub>2</sub>B + m and so on such that A<sup>nr+x</sup> = t<sub>2</sub>B + m for n ∈ ℕ. This means that values of x which repeat periodically with a period of r will have the same value for m.
+
+For example, if A = 3, B = 5 and m = 3 such that 3<sup>4</sup> = 16(5) + 1 and 3<sup>5</sup> = 48(5) + 3 then 3<sup>4+5</sup> = 3<sup>9</sup> = 3936(5) + 3 and 3<sup>2(4)+5</sup> = 3<sup>13</sup>= 318864(5) + 3 and so on. 
+                
+With this knowledge, we can now look at a general idea of how Shor's Algorithm works.
+
+<b>Shor's Algorithm Method</b>
+    1. Select a random integer, g, such that 1 < g < N. This will be our initial guess for one of the prime factors of N.
+    
+    2. Find the highest common factor of g and N [i.e. gcd(g,N)] using the <a href="euclid.html">Euclidean algorithm</a>.
+    
+    3. If gcd(g,N) ≠ 1, then this means g and N share a common factor. We can divide N by this common factor to find one of the prime factors of N and hence are done. Note that since N is so large, the chance that gcd(g,N) ≠ 1 is <b>EXTREMELY</b> unlikely.
+    
+    4. Otherwise g and N are coprime. This means we can find numbers r,t ∈ ℕ where g<sup>r</sup> = tN + 1.
+    
+    5. Rearranging this gives g<sup>r</sup> - 1 = tN + 1 → (g<sup>r/2</sup> + 1)(g<sup>r/2</sup> - 1) = tN. Hence we can find 2 integers which, when multiplied together, gives us a multiple of N. Note how this looks very similar to what we want to find, i.e. 2 prime numbers which multiply together to give N.
+    
+    6. To find the value of r, a quantum computer must be used with the following quantum computation:
+        a) Take an integer, x as an input and raise our guess, g, to this value of x, outputting the value of x and g<sup>x</sup>. 
+        b) After this, calculate g<sup>x</sup> (mod N) which is the integer remainder when dividing g<sup>x</sup> by N (call this +R) and output the value of x and +R.
+        c) As this is a quantum computer, multiple values of x can be sent in one input as a superposition, so we can send in values of x from 1 up to the value of N. From above we know that values of x which repeat periodically with a period of r will have the same value for +R.
+        d) Once all the values of x have gone through the computation and the answers have been calculated, one of the answers will be outputted at random.
+        e) Due to special properties of quantum computation, since the output of +R will have multiple values of x it corresponds to, all these values will be outputted. These values repeat with a frequency of 1/r.
+        f) This superposition of values is then passed through a linear transformation called a <i>quantum Fourier transform</i> which produces a superposition of multiples of 1/r, where one of these multiples is outputted.
+        g) We repeat this calculation a few times so that several multiples of 1/r are outputted and from this can find the common factor of these values, which is 1/r, and hence have found r.
+    
+    7. Now we know r, we can calculate the values of (g<sup>r/2</sup> + 1) and (g<sup>r/2</sup> - 1). If r is odd, or one of these values is a multiple of N and the other a factor of t, then the value of r is useless and so go back to step 1. 
+    
+    8. Otherwise (g<sup>r/2</sup> + 1)(g<sup>r/2</sup> - 1) = tN where (g<sup>r/2</sup> + 1) is some multiple of the prime p and (g<sup>r/2</sup> - 1) is some multiple of the prime q. (i.e. (ap)(bq) = t(pq) for a,b ∈ ℕ)
+    
+    9. Hence we can apply the Euclidean algorithm to find the gcd(g<sup>r/2</sup> + 1, N) = p and the gcd(g<sup>r/2</sup> - 1, N) = q and so have factored our large number N into its 2 prime factors p and q, cracking the key.
+
+The reason a quantum computer has to be used to find r is because it can simultaneously calculate multiple answers for a single input by using a quantum superposition. Note that once this superposition of answers is <i>measured</i>, only one of these answers is outputted randomly, with each answer having a different probability that it is outputted. This differs from a classical computer which can only give one solution for one input and so would take an unconventional amount of time to find a solution to r.
+    
+Remember, not every randomly-generated value of g will work to give a suitable value for r. As stated above, r can't be odd otherwise calculating (g<sup>r/2</sup> + 1) and (g<sup>r/2</sup> - 1) will most likely give non-integer values which aren't relevant for us. Furthermore, if the calculated value of r means that one value of (g<sup>r/2</sup> + 1), (g<sup>r/2</sup> - 1) is a multiple of N and the other a factor of t, then we won't be able to find the prime factors p and q as they have not been split between the 2 brackets and so we would have to manually split it which defeats the purpose of this algorithm.
+    
+Overall, for any initial guess, g, we make, there is at least a 37.5% chance this method will work. Although this seems low, if we repeat this algorithm until it eventually works then it is 99% likely it will only take fewer than 10 guesses to solve.
+    
+    
+<b>Shor’s Algorithm - Example</b>    
+Consider if we wanted to find the 2 prime numbers that multiplied together to give N = 314191.
+
+Let's start with a random value, g = 101. We can then use the Euclidean algorithm to find the gcd(101, 314191) which is 1. This means we need to find r,t ∈ ℕ such that 101<sup>r</sup> = 314191t + 1. 
+    
+If we had a quantum computer, we would then create a superposition of all the numbers, x ∈ [1, 314191] and complete the following computations:
+<img src="../img/shorEx1.png" class="imgCenter" width="600">    
+This sequence takes the superposition for x and raises 101 to the power of x then finds (mod 314191) of this solution. It would look something like this:
+<img src="../img/shorEx2.png" class="imgCenter" width="900">  
+By measuring the final computation, this will output one of the remainders, +R, as well as creating a superposition of all the corresponding values of x which had this remainder, i.e. |x⟩ + |x + r⟩ + |x + 2r⟩ + … In this case, if |+74126⟩ is the remainder outputted, then this will give the following superposition of |20⟩ + |4367⟩ + |8714⟩ + …
+    
+This superposition is then passed through the quantum Fourier transform which will produce a superposition in the form |1/r⟩ + |2/r⟩ + |3/r⟩ + … In this example, the superposition will be |1/4347⟩ + |2/4347⟩ + |3/4347⟩ + …
+    
+This superposition can then be measured a couple of times, where each time one of the values is outputted at random, and from this we can find the common factor of the values and hence r. For example, if we take 3 measurements and are given the values |5/4347⟩, |8/4347⟩, |3/4347⟩ then we can compute the common factor to be 1/4347 and so r = 4347.
+    
+But now we have a problem, because r is odd and so won't give an integer solution to (101<sup>r/2</sup> + 1)(101<sup>r/2</sup> - 1). This means the value of g = 101 is not a suitable value and so will have to try a new random integer.
+    
+Let's now try a new random value for g, such as g = 127. By repeating the process for this value of g, we get that r = 17388. This satisfies the conditions for r and so we now know that (127<sup>17388/2</sup> + 1)(127<sup>17388/2</sup> - 1) = (127<sup>8694</sup> + 1)(127<sup>8694</sup> - 1) = 314191t for some t ∈ ℕ.
+    
+Again, by using the Euclidean algorithm, we can calculate the gcd(127<sup>8694</sup> + 1, 314191) = 829 and gcd(127<sup>8694</sup> - 1, 314191) = 379 which means the 2 prime numbers which produce N = 314191 is p = 829 and q = 379.
+    
+<i>Written by <b>Louise</b></i>
+</p>  
+        </div>
+    </body>
+</div>
+
+<footer>
+    <div class="nextButton">
+        <a href="shamir.html" class="three-d">
+            Shamir's Secret < <span class="three"><span class="front">
+                Shamir's Secret < </span><span class="back">
+                    Shamir's Secret  < </span>
+                        </span>
+        </a>
+        <a href="algorithmsQuiz.html" class="three-d">
+            > Algorithms Quiz
+            <span class="three"><span class="front">> Algorithms Quiz</span><span class="back">> Algorithms Quiz</span></span>
+        </a>
+    </div>
+</footer>
+
+
+<!--
+References
+How Quantum Computers Work:
+Helwer, A. 2018. ‘Quantum Computing for Computer Scientists’. [online] microsoft.com. Available at: <https://www.microsoft.com/en-us/research/video/quantum-computing-computer-scientists/> [Accessed 8 August 2020]
+Shor’s Algorithm:
+minutephysics. 2019. ‘How Quantum Computers Break Encryption| Shor’s Algorithm Explained’. [online] Available at: <https://www.youtube.com/watch?v=lvTqbM5Dq4Q> [Accessed 11 August 2020]
+minutephysics. 2019. ‘How Shor's Algorithm Factors 314191’. [online] Available at: <https://www.youtube.com/watch?v=FRZQ-efABeQ> [Accessed 11 August 2020]
+en.wikipedia.org. 2020. ‘Shor’s algorithm’. [online] Available at: <https://en.wikipedia.org/wiki/Shor%27s_algorithm> [Accessed 11 August 2020]
+‘Shor’s factoring algorithm’. 2015. [online] quantiki.org. Available at: <https://www.quantiki.org/wiki/shors-factoring-algorithm> [Accessed 11 August 2020]
+Quantum Cryptography:
+Clark, J. 2007.  ‘How Quantum Cryptology Works’. [online] HowStuffWorks.com. Available at: <https://science.howstuffworks.com/science-vs-myth/everyday-myths/quantum-cryptology3.htm> [Accessed 13 August 2020]
+Howells, J.  2020. Can quantum cryptography secure the Internet in the quantum computer age? [online] orange-business.com. Available at: <https://www.orange-business.com/en/blogs/can-quantum-cryptography-secure-internet-quantum-computer-age> [Accessed 8 August 2020]
+Jackson, W. 2013. ‘How quantum key distribution works’. [online] gcn.com. Available at: <https://gcn.com/articles/2013/10/29/how-quantum-key-distribution-works.aspx#:~:text=Quantum%20key%20distribution%20(QKD)%20uses,such%20as%20polarization%20or%20spin.> [Accessed 8 August 2020]
+En.wikipedia.org. 2020. ‘Quantum key distribution’. [online] Available at: <https://en.wikipedia.org/wiki/Quantum_key_distribution> [Accessed 8 August 2020]
+‘Quantum Key Distribution (QKD)’. No date. [online] qt.eu. Available at: <https://qt.eu/understand/underlying-principles/quantum-key-distribution-qkd/> [Accessed 13 August 2020]
+Rouse, M. 2020. ‘quantum key distribution (QKD)’. [online] searchsecurity.techtarget.com. Available at: <https://searchsecurity.techtarget.com/definition/quantum-key-distribution-QKD> [Accessed 13 August 2020]
+QRNG:
+‘How to Win at Slots’. 2017. [online] blogs.unimelb.edu.au. Available at: <https://blogs.unimelb.edu.au/sciencecommunication/2017/10/10/how-to-win-at-slots/#:~:text=Sadly%2C%20%E2%80%9Croll%20a%20die%E2%80%9D,that%20any%20computer%20can%20understand.&text=Instead%2C%20machines%20use%20a%20pseudo%2Drandom%20number%20generator.&text=Now%2C%20the%20slot%20machine's%20pseudo,to%2Dknow%2Dprecisely%20variables.> [Accessed 12 August 2020]
+En.wikipedia.org. 2020. ‘Pseudorandom number generator’. [online] Available at: <https://en.wikipedia.org/wiki/Pseudorandom_number_generator> [Accessed 12 August 2020]
+Sharma, V. 2018. ‘How quantum physics can make encryption stronger’. [online] Available at: <https://www.youtube.com/watch?v=SQB9zNWw9MA> [Accessed 10 August 2020]
+Limitations:
+Coles, P. and Pakin, S. 2019. ‘The Problem with Quantum Computers’. [online] blogs.scientificamerican.com. Available at: <https://blogs.scientificamerican.com/observations/the-problem-with-quantum-computers/#:~:text=Quantum%20computers%20are%20exceedingly%20difficult,chance%20to%20run%20to%20completion.> [Accessed 17 August 2020]
+Greene, T. 2018. ‘Understanding quantum computers: The noise problem’. [online] thenextweb.com. Available at: <https://thenextweb.com/artificial-intelligence/2018/10/25/understanding-quantum-computers-the-noise-problem/> [Accessed 17 August 2020]
+Griffin, A. 2020. ‘Quantum Computing Breakthrough As Scientists Find Possible Solution To Technology’s Biggest Hurdle’. [online] independent.co.uk. Available at: <https://www.independent.co.uk/life-style/gadgets-and-tech/news/quantum-computing-computer-noise-algorithm-large-system-ibm-a9663461.html> [Accessed 17 August 2020]
+Karpuzcu, U. and Resch, S.  2019. ‘Quantum Computing: An Overview Across the System Stack’. [online] arxiv.org. Available at: <https://arxiv.org/pdf/1905.07240.pdf> [Accessed 17 August 2020]
+-->
+

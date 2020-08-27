@@ -1,0 +1,289 @@
+<head>
+    <title>CryptoWars Quiz</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yhe5mma.css">
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/quiz.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <script src="../js/cryptowarsQuiz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://jchamill.github.io/jquery-quiz/jquery.quiz-min.js"></script>
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/browsers.js"></script>
+</head>
+
+<div class="header">
+    <div class="typewriter">
+        <h1>Test Your Knowledge</h1>
+    </div>
+</div>
+
+<div class="logo">
+    <a href="../index.html">
+        <img src="../img/Final-Logo.png" height="100px">
+    </a>
+</div>
+
+<ul class="navigation">
+    <li><a href="../index.html" class="three-d">
+            Home
+            <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+    <li><a href="about.html" class="three-d">
+            About
+            <span class="three"><span class="front">About</span><span class="back">About</span></span>
+        </a></li>
+    <li><a href="#Resources" class="three-d">
+            Resources
+            <span class="three"><span class="front">Resources</span><span class="back">Resources</span></span>
+        </a>
+        <ul>
+            <li><a href="history.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a>
+                <ul class="side-dropdown">
+                    <li><a href="enigma.html" class="three-d">
+                            Enigma
+                            <span class="three"><span class="front">Enigma</span><span class="back">Enigma</span></span>
+                        </a></li>
+                    <li><a href="ww2.html" class="three-d">
+                            WWII
+                            <span class="three"><span class="front">WWII</span><span class="back">WWII</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+                </a>
+                <ul class="side-dropdown1">
+                    <li><a href="cryptowars1.html" class="three-d">
+                            The Beginning
+                            <span class="three"><span class="front">The Beginning</span><span class="back">The
+                                    Beginning</span></span>
+                        </a></li>
+                    <li><a href="cryptowars2.html" class="three-d">
+                            The Internet
+                            <span class="three"><span class="front">The Internet</span><span class="back">The
+                                    Internet</span></span>
+                        </a></li>
+                    <li><a href="cryptowars3.html" class="three-d">
+                            U.S. Government
+                            <span class="three"><span class="front">U.S. Government</span><span class="back">U.S.
+                                    Government</span></span>
+                        </a></li>
+                    <li><a href="cryptowars4.html" class="three-d">
+                            Cracking DES
+                            <span class="three"><span class="front">Cracking DES</span><span class="back">Cracking
+                                    DES</span></span>
+                        </a></li>
+                    <li><a href="cryptowars5.html" class="three-d">
+                            Ongoing War
+                            <span class="three"><span class="front">Ongoing War</span><span class="back">Ongoing
+                                    War</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="cryptosystem.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+            </a>
+            <ul class="side-dropdown2">
+                <li><a href="symmetricKey.html" class="three-d">
+                        Symmetric Key
+                        <span class="three"><span class="front">Symmetric Key</span><span class="back">Symmetric Key</span></span>
+                    </a></li>
+                    <li><a href="asymmetricKey.html" class="three-d">
+                        Asymmetric Key
+                        <span class="three"><span class="front">Asymmetric Key</span><span class="back">Asymmetric Key</span></span>
+                    </a></li>
+                <li><a href="principles.html" class="three-d">
+                        Kerckhoff & Shannon
+                        <span class="three"><span class="front">Kerckhoff & Shannon</span><span class="back">Kerckhoff & Shannon</span></span>
+                    </a></li>
+            </ul>
+        </li>
+            <li><a href="division.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a>
+                <ul class="side-dropdown3">
+                    <li><a href="euclid.html" class="three-d">
+                            Euclid's Algorithm
+                            <span class="three"><span class="front">Euclid's Algorithm</span><span class="back">Euclid's
+                                    Algorithm</span></span>
+                        </a></li>
+                    <li><a href="bezout.html" class="three-d">
+                            Bezout's Identity
+                            <span class="three"><span class="front">Bezout's Identity</span><span class="back">Bezout's
+                                    Identity</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="rsa.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+                </a>
+                <ul class="side-dropdown4">
+                    <li><a href="primes.html" class="three-d">
+                            Primes
+                            <span class="three"><span class="front">Primes</span><span class="back">Primes</span></span>
+                        </a></li>
+                    <li><a href="modularArithmetic.html" class="three-d">
+                            Modular Arithmetic
+                            <span class="three"><span class="front">Modular Arithmetic</span><span class="back">Modular
+                                    Arithmetic</span></span>
+                        </a></li>
+                    <li><a href="chineseRemainder.html" class="three-d">
+                            Chinese Remainder Theorem
+                            <span class="three"><span class="front">Chinese Remainder Theorem</span><span
+                                    class="back">Chinese Remainder Theorem</span></span>
+                        </a></li>
+                        <li><a href="euler.html" class="three-d">
+                            Euler's Theorem
+                            <span class="three"><span class="front">Euler's Theorem</span><span
+                                    class="back">Euler's Theorem</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="ellipticCurve.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+            </a>
+            <ul class="side-dropdown5">
+                
+            </ul>
+        </li>
+            <li><a href="#" class="three-d">
+                Algorithms
+                <span class="three"><span class="front">Algorithms</span><span class="back">Algorithms</span></span>
+            </a>
+            <ul class="side-dropdown6">
+                <li><a href="aes.html" class="three-d">
+                    AES
+                    <span class="three"><span class="front">AES</span><span class="back">AES</span></span>
+                </a></li>
+                <li><a href="diffieHellman.html" class="three-d">
+                        Diffie Hellman
+                        <span class="three"><span class="front">Diffie Hellman</span><span class="back">Diffie Hellman</span></span>
+                    </a></li>
+                <li><a href="shamir.html" class="three-d">
+                        Shamir's Secret
+                        <span class="three"><span class="front">Shamir's Secret</span><span class="back">Shamir's Secret</span></span>
+                    </a></li>
+                    <li><a href="shor.html" class="three-d">
+                        Shor's Algorithm
+                        <span class="three"><span class="front">Shor's Algorithm</span><span class="back">Shor's Algorithm</span></span>
+                    </a></li>
+            </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                Programming
+                <span class="three"><span class="front">Programming</span><span class="back">Programming</span></span>
+            </a>
+            <ul class="side-dropdown7">
+                <li><a href="branchlessProgramming.html" class="three-d">
+                        Branchless Programming
+                        <span class="three"><span class="front">Branchless Programming</span><span class="back">Branchless Programming</span></span>
+                    </a></li>
+                    <li><a href="programRsa.html" class="three-d">
+                        RSA in Python
+                        <span class="three"><span class="front">RSA in Python</span><span class="back">RSA in Python</span></span>
+                    </a></li>
+                    <li><a href="programAES.html" class="three-d">
+                        AES in Python
+                        <span class="three"><span class="front">AES in Python</span><span class="back">AES in Python</span></span>
+                    </a></li>
+                    <li><a href="programEnigma.html" class="three-d">
+                        Enigma in Python
+                        <span class="three"><span class="front">Enigma in Python</span><span class="back">Enigma in Python</span></span>
+                    </a></li>
+                    <li><a href="quantum.html" class="three-d">
+                        Quantum
+                        <span class="three"><span class="front">Quantum</span><span class="back">Quantum</span></span>
+                    </a></li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#Quizzes" class="three-d">
+            Quizzes
+            <span class="three"><span class="front">Quizzes</span><span class="back">Quizzes</span></span>
+        </a>
+        <ul>
+            <li><a href="historyQuiz.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a></li>
+            <li><a href="cryptoWarsQuiz.html" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+            </a></li>
+            <li><a href="cryptosystemsQuiz.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+        </a></li>
+            <li><a href="divisionQuiz.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a></li>
+            <li><a href="rsaQuiz.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+            </a></li>
+            <li><a href="ellipticCurveQuiz.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+        </a></li>
+            <li><a href="algorithmsQuiz.html" class="three-d">
+                Other Algorithms
+                <span class="three"><span class="front">Other Algorithms</span><span class="back">Other Algorithms</span></span>
+        </a></li>
+        <li><a href="quantumQuiz.html" class="three-d">
+            Quantum Quiz
+            <span class="three"><span class="front">Quantum Quiz</span><span class="back">Quantum Quiz</span></span>
+    </a></li>
+        </ul>
+    </li>
+    <li><a href="support.html" class="three-d">
+            Support
+            <span class="three"><span class="front">Support</span><span class="back">Support</span></span>
+        </a></li>
+    <li><a href="contact.html" class="three-d">
+            Contact
+            <span class="three"><span class="front">Contact</span><span class="back">Contact</span></span>
+        </a></li>
+</ul>
+
+<div class="box">
+
+    <body>
+        <div id="quiz">
+            <div id="quiz-header">
+                <h2>CryptoWars Quiz</h2>
+                <p class="faded">Test your knowledge and take this quiz about the history of the cryptowars.</p>
+            </div>
+            <div id="quiz-start-screen">
+                <p><a href="#" id="quiz-start-btn" class="quiz-button">Begin</a></p>
+            </div>
+        </div>
+    </body>
+</div>
+
+<footer>
+    <div class="nextButton">
+        <a href="cryptowars4.html" class="three-d">
+            Ongoing War <<span class="three"><span class="front">
+                Ongoing War <</span><span class="back">
+                    Ongoing War <</span>
+                        </span>
+        </a>
+        <a href="cryptosystem.html" class="three-d">
+            > Suggested Topic: Cryptosystems
+            <span class="three"><span class="front">> Suggested Topic: Cryptosystems</span><span class="back">> Suggested Topic: Cryptosystems</span></span>
+        </a>
+    </div>
+</footer>
+

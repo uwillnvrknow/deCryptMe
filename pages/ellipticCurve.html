@@ -1,0 +1,366 @@
+<head>
+    <title>Elliptic-Curve Cryptography</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yhe5mma.css">
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/division.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/browsers.js"></script>
+</head>
+
+<div class="header">
+    <div class="typewriter">
+    <h1>Elliptic-Curve</h1>
+    </div>
+</div>
+
+<div class="logo">
+    <a href="../index.html">
+        <img src="../img/Final-Logo.png" height="100px">
+    </a>
+</div>
+
+<ul class="navigation">
+    <li><a href="../index.html" class="three-d">
+            Home
+            <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+    <li><a href="about.html" class="three-d">
+            About
+            <span class="three"><span class="front">About</span><span class="back">About</span></span>
+        </a></li>
+    <li><a href="#Resources" class="three-d">
+            Resources
+            <span class="three"><span class="front">Resources</span><span class="back">Resources</span></span>
+        </a>
+        <ul>
+            <li><a href="history.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a>
+                <ul class="side-dropdown">
+                    <li><a href="enigma.html" class="three-d">
+                            Enigma
+                            <span class="three"><span class="front">Enigma</span><span class="back">Enigma</span></span>
+                        </a></li>
+                    <li><a href="ww2.html" class="three-d">
+                            WWII
+                            <span class="three"><span class="front">WWII</span><span class="back">WWII</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+                </a>
+                <ul class="side-dropdown1">
+                    <li><a href="cryptowars1.html" class="three-d">
+                            The Beginning
+                            <span class="three"><span class="front">The Beginning</span><span class="back">The
+                                    Beginning</span></span>
+                        </a></li>
+                    <li><a href="cryptowars2.html" class="three-d">
+                            The Internet
+                            <span class="three"><span class="front">The Internet</span><span class="back">The
+                                    Internet</span></span>
+                        </a></li>
+                    <li><a href="cryptowars3.html" class="three-d">
+                            U.S. Government
+                            <span class="three"><span class="front">U.S. Government</span><span class="back">U.S.
+                                    Government</span></span>
+                        </a></li>
+                    <li><a href="cryptowars4.html" class="three-d">
+                            Cracking DES
+                            <span class="three"><span class="front">Cracking DES</span><span class="back">Cracking
+                                    DES</span></span>
+                        </a></li>
+                    <li><a href="cryptowars5.html" class="three-d">
+                            Ongoing War
+                            <span class="three"><span class="front">Ongoing War</span><span class="back">Ongoing
+                                    War</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="cryptosystem.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+            </a>
+            <ul class="side-dropdown2">
+                <li><a href="symmetricKey.html" class="three-d">
+                        Symmetric Key
+                        <span class="three"><span class="front">Symmetric Key</span><span class="back">Symmetric Key</span></span>
+                    </a></li>
+                    <li><a href="asymmetricKey.html" class="three-d">
+                        Asymmetric Key
+                        <span class="three"><span class="front">Asymmetric Key</span><span class="back">Asymmetric Key</span></span>
+                    </a></li>
+                <li><a href="principles.html" class="three-d">
+                        Kerckhoff & Shannon
+                        <span class="three"><span class="front">Kerckhoff & Shannon</span><span class="back">Kerckhoff & Shannon</span></span>
+                    </a></li>
+            </ul>
+        </li>
+            <li><a href="division.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a>
+                <ul class="side-dropdown3">
+                    <li><a href="euclid.html" class="three-d">
+                            Euclid's Algorithm
+                            <span class="three"><span class="front">Euclid's Algorithm</span><span class="back">Euclid's
+                                    Algorithm</span></span>
+                        </a></li>
+                    <li><a href="bezout.html" class="three-d">
+                            Bezout's Identity
+                            <span class="three"><span class="front">Bezout's Identity</span><span class="back">Bezout's
+                                    Identity</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="rsa.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+                </a>
+                <ul class="side-dropdown4">
+                    <li><a href="primes.html" class="three-d">
+                            Primes
+                            <span class="three"><span class="front">Primes</span><span class="back">Primes</span></span>
+                        </a></li>
+                    <li><a href="modularArithmetic.html" class="three-d">
+                            Modular Arithmetic
+                            <span class="three"><span class="front">Modular Arithmetic</span><span class="back">Modular
+                                    Arithmetic</span></span>
+                        </a></li>
+                    <li><a href="chineseRemainder.html" class="three-d">
+                            Chinese Remainder Theorem
+                            <span class="three"><span class="front">Chinese Remainder Theorem</span><span
+                                    class="back">Chinese Remainder Theorem</span></span>
+                        </a></li>
+                        <li><a href="euler.html" class="three-d">
+                            Euler's Theorem
+                            <span class="three"><span class="front">Euler's Theorem</span><span
+                                    class="back">Euler's Theorem</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="ellipticCurve.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+            </a>
+            <ul class="side-dropdown5">
+                
+            </ul>
+        </li>
+            <li><a href="#" class="three-d">
+                Algorithms
+                <span class="three"><span class="front">Algorithms</span><span class="back">Algorithms</span></span>
+            </a>
+            <ul class="side-dropdown6">
+                <li><a href="aes.html" class="three-d">
+                    AES
+                    <span class="three"><span class="front">AES</span><span class="back">AES</span></span>
+                </a></li>
+                <li><a href="diffieHellman.html" class="three-d">
+                        Diffie Hellman
+                        <span class="three"><span class="front">Diffie Hellman</span><span class="back">Diffie Hellman</span></span>
+                    </a></li>
+                <li><a href="shamir.html" class="three-d">
+                        Shamir's Secret
+                        <span class="three"><span class="front">Shamir's Secret</span><span class="back">Shamir's Secret</span></span>
+                    </a></li>
+                    <li><a href="shor.html" class="three-d">
+                        Shor's Algorithm
+                        <span class="three"><span class="front">Shor's Algorithm</span><span class="back">Shor's Algorithm</span></span>
+                    </a></li>
+            </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                Programming
+                <span class="three"><span class="front">Programming</span><span class="back">Programming</span></span>
+            </a>
+            <ul class="side-dropdown7">
+                <li><a href="branchlessProgramming.html" class="three-d">
+                        Branchless Programming
+                        <span class="three"><span class="front">Branchless Programming</span><span class="back">Branchless Programming</span></span>
+                    </a></li>
+                    <li><a href="programRsa.html" class="three-d">
+                        RSA in Python
+                        <span class="three"><span class="front">RSA in Python</span><span class="back">RSA in Python</span></span>
+                    </a></li>
+                    <li><a href="programAES.html" class="three-d">
+                        AES in Python
+                        <span class="three"><span class="front">AES in Python</span><span class="back">AES in Python</span></span>
+                    </a></li>
+                    <li><a href="programEnigma.html" class="three-d">
+                        Enigma in Python
+                        <span class="three"><span class="front">Enigma in Python</span><span class="back">Enigma in Python</span></span>
+                    </a></li>
+                    <li><a href="quantum.html" class="three-d">
+                        Quantum
+                        <span class="three"><span class="front">Quantum</span><span class="back">Quantum</span></span>
+                    </a></li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#Quizzes" class="three-d">
+            Quizzes
+            <span class="three"><span class="front">Quizzes</span><span class="back">Quizzes</span></span>
+        </a>
+        <ul>
+            <li><a href="historyQuiz.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a></li>
+            <li><a href="cryptoWarsQuiz.html" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+            </a></li>
+            <li><a href="cryptosystemsQuiz.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+        </a></li>
+            <li><a href="divisionQuiz.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a></li>
+            <li><a href="rsaQuiz.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+            </a></li>
+            <li><a href="ellipticCurveQuiz.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+        </a></li>
+            <li><a href="algorithmsQuiz.html" class="three-d">
+                Other Algorithms
+                <span class="three"><span class="front">Other Algorithms</span><span class="back">Other Algorithms</span></span>
+        </a></li>
+        <li><a href="quantumQuiz.html" class="three-d">
+            Quantum Quiz
+            <span class="three"><span class="front">Quantum Quiz</span><span class="back">Quantum Quiz</span></span>
+    </a></li>
+        </ul>
+    </li>
+    <li><a href="support.html" class="three-d">
+            Support
+            <span class="three"><span class="front">Support</span><span class="back">Support</span></span>
+        </a></li>
+    <li><a href="contact.html" class="three-d">
+            Contact
+            <span class="three"><span class="front">Contact</span><span class="back">Contact</span></span>
+        </a></li>
+</ul>
+
+<div class="box">
+    <body>
+        <h2>Elliptic-Curve Cryptography</h2>
+
+        <div class="text-box">
+            <p>In mathematics, an elliptic curve is a plane algebraic curve defined by an equation of the form. which is non-singular; that is, the curve has no cusps or self-intersections. Elliptical curve cryptography (ECC) is a public key encryption technique based on elliptic curve theory that can be used to create faster, smaller, and more efficient cryptographic keys. ECC generates keys through the properties of the elliptic curve equation instead of the traditional method of generation as the product of very large prime numbers.
+<img src="../img/elliptic-curve.png" alt="Elliptic Curve Graph" class="imgRight" width="400"/>   
+<u>Point Addition</u>
+A straight line on the elliptic curve y&sup2; = x&sup3; + ax + b  intersects three times,  each point of intersection is called P, Q and -R. P and Q can be used to find R, which is a reflection of point -R over the x axis.
+                
+First the gradient (m) of the line is needed. 
+<div class="calculation">m = (y<sub>P</sub> - y<sub>Q</sub>) / (x<sub>P</sub> - x<sub>Q</sub>)</div> 
+ 
+The gradient can then be used to find the x and y coordinates for R.
+                
+<div class="calculation">x<sub>R</sub> = m&sup2; - (x<sub>P</sub> + x<sub>Q</sub>)
+y<sub>R</sub> = m(x<sub>P</sub> - x<sub>Q</sub>) - y<sub>p</sub></div>
+
+<u>Scalar Multiplication</u>
+However when R = 2P, the formulae change, and m is now the gradient of the tangent of P.
+                
+<div class="calculation">m = (3x<sub>P</sub>&sup2; + a) / 2y<sub>P</sub>
+x<sub>2P</sub> = m&sup2; - 2x<sub>P</sub>
+y<sub>2P</sub> = m(x<sub>P</sub> - x<sub>2P</sub>) - y<sub>p</sub></div>
+                
+To find 3P you would need to first calculate 2P and then point addition for P + 2P.
+To find 4P you would calculate 2P, and the 4P which is 2(2P).
+To find 5P you would need to first calculate 2P, then 4P and then 5P = 4P + P.
+                
+You must remember these concepts to understand the Elliptic Curve Diffie Hellman Key Exchange.
+                
+<b>Key Generation</b>
+Alice and Bob will agree on a, b and p (the modulus) to define their curve; note 4a&sup3; + 27b ≠ 0.
+Alice and Bob then agree on the Generator point G which they will use to find their private keys.
+                
+n is identified, where nG = (∞,∞), this is where x<sub>(n-1)G</sub> = x<sub>G</sub>. If for example 10G = G and 10 < n, then there are only 10 points on the curve. h is defined as h = number of points on the curve / n.
+                
+All of the previously mentioned values are public and any interceptor can view these without knowing Alice and Bob’s secret key.
+                
+Alice and Bob pick private keys α and β only accessible to themselves. Alice and Bob do not know each other's private keys. Alice and Bob can then exchange their public keys on an insecure channel, which are found using the following formulae:
+<div class="calculation">Alice’s: A = αG
+Bob’s: B = βG</div>
+                
+Alice and Bob can then find their shared secret key without knowing each other’s private keys using this formula:
+<div class="calculation">Alice calculates: K = αB
+Bob calculates: K = βA
+K = (αβ mod n)G</div>
+                
+<b>Example:</b>
+Let a = 2, b = 2, p = 17, G = (5, 1) n = 19, h = 1. Alice chooses her private key α = 3 and calculates her private key A which equals 3G.
+                
+<u>Step 1:</u>
+    m = (3x<sub>G</sub>2 + a) / 2y<sub>G</sub>  mod p
+      = (3(5)2 + 2)/(2 * 1) mod 17
+      = 77 / 2 mod 17               [Use the <a href="bezout.html">Extended Euclidean Algorithm</a> here]
+      = 77 * 9 mod 17
+      = 13
+                
+    x<sub>2G</sub> = m2 - 2x<sub>G</sub>  mod p
+        = 132 - 2*5 mod 17
+        = 159 mod 17
+        = 6
+                
+    y<sub>2G</sub> = m(x<sub>G</sub> - x<sub>2G</sub> ) - y<sub>G</sub> mod p
+        = 13(5 - 6) - 1 mod 17
+        = -14 mod 17
+        = 3
+                
+    2G = (6, 3)
+                
+<u>Step 2:</u>
+    P = 2G, Q = G
+    m = (y<sub>2G</sub> - y<sub>G</sub>) / (x<sub>2G</sub> - x<sub>G</sub>) mod p
+      = (3 - 1) / (6 - 5) mod 17
+      = 2 * 1
+      = 2
+                
+    x<sub>3G</sub> = m2 - (x<sub>2G</sub> + x<sub>G</sub>) mod p
+        = 22 - (6 + 5) mod 17
+        = 4 - 11 mod 17
+        = 10
+                
+    y<sub>3G</sub>  = m(x<sub>2G</sub> - x<sub>G</sub>) - y<sub>2G</sub> mod p
+        = 2(6 - 5) - 3 mod 17
+        = 2 - 3 mod 17
+        = 16
+                
+    3G = (10, 6)
+                
+
+<i>Written by <b>Chelsea</b></i>
+</p>
+        </div>
+    </body>
+</div>
+
+<footer>
+    <div class="nextButton">
+        <a href="rsa.html" class="three-d">
+          RSA < <span class="three"><span class="front">
+            RSA < </span><span class="back">
+                RSA < </span>
+                        </span>
+        </a>
+        <a href="ellipticCurveQuiz.html" class="three-d">
+            > Elliptic-Curve Quiz
+            <span class="three"><span class="front">> Elliptic-Curve Quiz</span><span class="back">> Elliptic-Curve Quiz</span></span>
+        </a>
+    </div>
+</footer>

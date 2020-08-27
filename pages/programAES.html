@@ -1,0 +1,706 @@
+<head>
+    <title>AES in Python</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yhe5mma.css">
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/division.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <script src="../js/division.js"></script>
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/browsers.js"></script>
+</head>
+
+<div class="header">
+    <div class="typewriter">
+        <h1>AES in Python</h1>
+    </div>
+</div>
+
+<div class="logo">
+    <a href="../index.html">
+        <img src="../img/Final-Logo.png" height="100px">
+    </a>
+</div>
+
+<ul class="navigation">
+    <li><a href="../index.html" class="three-d">
+            Home
+            <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+    <li><a href="about.html" class="three-d">
+            About
+            <span class="three"><span class="front">About</span><span class="back">About</span></span>
+        </a></li>
+    <li><a href="#Resources" class="three-d">
+            Resources
+            <span class="three"><span class="front">Resources</span><span class="back">Resources</span></span>
+        </a>
+        <ul>
+            <li><a href="history.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a>
+                <ul class="side-dropdown">
+                    <li><a href="enigma.html" class="three-d">
+                            Enigma
+                            <span class="three"><span class="front">Enigma</span><span class="back">Enigma</span></span>
+                        </a></li>
+                    <li><a href="ww2.html" class="three-d">
+                            WWII
+                            <span class="three"><span class="front">WWII</span><span class="back">WWII</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+                </a>
+                <ul class="side-dropdown1">
+                    <li><a href="cryptowars1.html" class="three-d">
+                            The Beginning
+                            <span class="three"><span class="front">The Beginning</span><span class="back">The
+                                    Beginning</span></span>
+                        </a></li>
+                    <li><a href="cryptowars2.html" class="three-d">
+                            The Internet
+                            <span class="three"><span class="front">The Internet</span><span class="back">The
+                                    Internet</span></span>
+                        </a></li>
+                    <li><a href="cryptowars3.html" class="three-d">
+                            U.S. Government
+                            <span class="three"><span class="front">U.S. Government</span><span class="back">U.S.
+                                    Government</span></span>
+                        </a></li>
+                    <li><a href="cryptowars4.html" class="three-d">
+                            Cracking DES
+                            <span class="three"><span class="front">Cracking DES</span><span class="back">Cracking
+                                    DES</span></span>
+                        </a></li>
+                    <li><a href="cryptowars5.html" class="three-d">
+                            Ongoing War
+                            <span class="three"><span class="front">Ongoing War</span><span class="back">Ongoing
+                                    War</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="cryptosystem.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+            </a>
+            <ul class="side-dropdown2">
+                <li><a href="symmetricKey.html" class="three-d">
+                        Symmetric Key
+                        <span class="three"><span class="front">Symmetric Key</span><span class="back">Symmetric Key</span></span>
+                    </a></li>
+                    <li><a href="asymmetricKey.html" class="three-d">
+                        Asymmetric Key
+                        <span class="three"><span class="front">Asymmetric Key</span><span class="back">Asymmetric Key</span></span>
+                    </a></li>
+                <li><a href="principles.html" class="three-d">
+                        Kerckhoff & Shannon
+                        <span class="three"><span class="front">Kerckhoff & Shannon</span><span class="back">Kerckhoff & Shannon</span></span>
+                    </a></li>
+            </ul>
+        </li>
+            <li><a href="division.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a>
+                <ul class="side-dropdown3">
+                    <li><a href="euclid.html" class="three-d">
+                            Euclid's Algorithm
+                            <span class="three"><span class="front">Euclid's Algorithm</span><span class="back">Euclid's
+                                    Algorithm</span></span>
+                        </a></li>
+                    <li><a href="bezout.html" class="three-d">
+                            Bezout's Identity
+                            <span class="three"><span class="front">Bezout's Identity</span><span class="back">Bezout's
+                                    Identity</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="rsa.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+                </a>
+                <ul class="side-dropdown4">
+                    <li><a href="primes.html" class="three-d">
+                            Primes
+                            <span class="three"><span class="front">Primes</span><span class="back">Primes</span></span>
+                        </a></li>
+                    <li><a href="modularArithmetic.html" class="three-d">
+                            Modular Arithmetic
+                            <span class="three"><span class="front">Modular Arithmetic</span><span class="back">Modular
+                                    Arithmetic</span></span>
+                        </a></li>
+                    <li><a href="chineseRemainder.html" class="three-d">
+                            Chinese Remainder Theorem
+                            <span class="three"><span class="front">Chinese Remainder Theorem</span><span
+                                    class="back">Chinese Remainder Theorem</span></span>
+                        </a></li>
+                        <li><a href="euler.html" class="three-d">
+                            Euler's Theorem
+                            <span class="three"><span class="front">Euler's Theorem</span><span
+                                    class="back">Euler's Theorem</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="ellipticCurve.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+            </a>
+            <ul class="side-dropdown5">
+                
+            </ul>
+        </li>
+            <li><a href="#" class="three-d">
+                Algorithms
+                <span class="three"><span class="front">Algorithms</span><span class="back">Algorithms</span></span>
+            </a>
+            <ul class="side-dropdown6">
+                <li><a href="aes.html" class="three-d">
+                    AES
+                    <span class="three"><span class="front">AES</span><span class="back">AES</span></span>
+                </a></li>
+                <li><a href="diffieHellman.html" class="three-d">
+                        Diffie Hellman
+                        <span class="three"><span class="front">Diffie Hellman</span><span class="back">Diffie Hellman</span></span>
+                    </a></li>
+                <li><a href="shamir.html" class="three-d">
+                        Shamir's Secret
+                        <span class="three"><span class="front">Shamir's Secret</span><span class="back">Shamir's Secret</span></span>
+                    </a></li>
+                    <li><a href="shor.html" class="three-d">
+                        Shor's Algorithm
+                        <span class="three"><span class="front">Shor's Algorithm</span><span class="back">Shor's Algorithm</span></span>
+                    </a></li>
+            </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                Programming
+                <span class="three"><span class="front">Programming</span><span class="back">Programming</span></span>
+            </a>
+            <ul class="side-dropdown7">
+                <li><a href="branchlessProgramming.html" class="three-d">
+                        Branchless Programming
+                        <span class="three"><span class="front">Branchless Programming</span><span class="back">Branchless Programming</span></span>
+                    </a></li>
+                    <li><a href="programRsa.html" class="three-d">
+                        RSA in Python
+                        <span class="three"><span class="front">RSA in Python</span><span class="back">RSA in Python</span></span>
+                    </a></li>
+                    <li><a href="programAES.html" class="three-d">
+                        AES in Python
+                        <span class="three"><span class="front">AES in Python</span><span class="back">AES in Python</span></span>
+                    </a></li>
+                    <li><a href="programEnigma.html" class="three-d">
+                        Enigma in Python
+                        <span class="three"><span class="front">Enigma in Python</span><span class="back">Enigma in Python</span></span>
+                    </a></li>
+                    <li><a href="quantum.html" class="three-d">
+                        Quantum
+                        <span class="three"><span class="front">Quantum</span><span class="back">Quantum</span></span>
+                    </a></li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#Quizzes" class="three-d">
+            Quizzes
+            <span class="three"><span class="front">Quizzes</span><span class="back">Quizzes</span></span>
+        </a>
+        <ul>
+            <li><a href="historyQuiz.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a></li>
+            <li><a href="cryptoWarsQuiz.html" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+            </a></li>
+            <li><a href="cryptosystemsQuiz.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+        </a></li>
+            <li><a href="divisionQuiz.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a></li>
+            <li><a href="rsaQuiz.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+            </a></li>
+            <li><a href="ellipticCurveQuiz.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+        </a></li>
+            <li><a href="algorithmsQuiz.html" class="three-d">
+                Other Algorithms
+                <span class="three"><span class="front">Other Algorithms</span><span class="back">Other Algorithms</span></span>
+        </a></li>
+        <li><a href="quantumQuiz.html" class="three-d">
+            Quantum Quiz
+            <span class="three"><span class="front">Quantum Quiz</span><span class="back">Quantum Quiz</span></span>
+    </a></li>
+        </ul>
+    </li>
+    <li><a href="support.html" class="three-d">
+            Support
+            <span class="three"><span class="front">Support</span><span class="back">Support</span></span>
+        </a></li>
+    <li><a href="contact.html" class="three-d">
+            Contact
+            <span class="three"><span class="front">Contact</span><span class="back">Contact</span></span>
+        </a></li>
+</ul>
+
+<div class="box">
+    <body>
+        <h2>Implementation of AES in Python</h2>
+        
+        <div class="text-box">
+            <p>To implement AES within python, we have put together a tutorial to talk you though how to code an AES function:
+                
+Before we jump into the function, we will set up an AES Key expansion which we will use within our AES function.                
+<img src="../img/aesKey1.png" class="imgCenter">
+This function calculates the given index's round constant for the key expansion.
+
+Parameters:
+    &bull; index - An integer that specifies the index of the round key to be generated.
+
+The returned value is the calculated constant as an integer.
+<img src="../img/aesKey2.png" class="imgCenter">
+This function rotates the elements of an array.
+
+Parameters:
+    &bull; num_arr - The array of integers to be rotated.
+
+The returned value is the rotated array.
+<img src="../img/aesKey3.png" class="imgCenter">
+This function performs the SBox for the given number. It does this by using a lookup table.
+
+Parameters:
+    &bull; num - The integer to perform the SBox for.
+
+The returned value is the result of performing the SBox on the given number.
+<img src="../img/aesKey4.png" class="imgCenter">
+This function performs the SBox on each number in a given array.
+
+Parameters:
+    &bull; num_arr - The array of integers to perform the SBox on.
+
+The returned value is an array containing the results of running the SBox for each number in the given array.
+
+Other functions from this module used:
+    &bull; SBox
+<img src="../img/aesKey5.png" class="imgCenter">
+This function performs key expansion for AES128. It does this by placing the integer values for each character in the initial key into an array. It then iterates and in each round it produces another 4 bytes of the key that are XOR of the previous round's 4 bytes and the bytes from 4 rounds ago. If the round number is a multiple of 4 then the bytes from the previous round are first run through rotate and sub and after the XOR operation the 1st byte is XORed with the relevant round constant. The 4 bytes produced are added to the end of the expanded key array. Before the expanded key is returned it is split into groups of 16 bytes which are the round keys used by AES128.
+
+Parameters:
+    &bull; init_key - The initial key given as a string.
+
+The returned value is the round keys for AES128 created from the given key as an array of arrays of integers.
+
+Other functions from this module used:
+    &bull; sub
+    &bull; rotate
+    &bull; rc
+<img src="../img/aesKey6.png" class="imgCenter">
+This function performs key expansion for AES192. It does this by placing the integer values for each character in the initial key into an array. It then iterates and in each round it produces another 4 bytes of the key that are XOR of the previous round's 4 bytes and the bytes from 6 rounds ago. If the round number is a multiple of 6 then the bytes from the previous round are first run through rotate and sub and after the XOR operation the 1st byte is XORed with the relevant round constant. The 4 bytes produced are added to the end of the expanded key array. Before the expanded key is returned it is split into groups of 16 bytes which are the round keys used by AES192.
+
+Parameters:
+    &bull; init_key - The initial key given as a string.
+
+The returned value is the round keys for AES192 created from the given key as an array of arrays of integers.
+
+Other functions from this module used:
+    &bull; sub
+    &bull; rotate
+    &bull; rc
+<img src="../img/aesKey7.png" class="imgCenter">
+This function performs key expansion for AES256. It does this by placing the integer values for each character in the initial key into an array. It then iterates and in each round it produces another 4 bytes of the key that are XOR of the previous round's 4 bytes and the bytes from 8 rounds ago. If the round number is a multiple of 8 then the bytes from the previous round are first run through rotate and sub and after the XOR operation the 1st byte is XORed with the relevant round constant. Otherwise, if the round number is a multiple of 4 then the 4 bytes from the previous round are first run through sub. The 4 bytes produced are added to the end of the expanded key array. Before the expanded key is returned it is split into groups of 16 bytes which are the round keys used by AES256.
+
+Parameters:
+    &bull; init_key - The initial key given as a string.
+
+The returned value is the round keys for AES256 created from the given key as an array of arrays of integers.
+
+Other functions from this module used:
+    &bull; sub
+    &bull; rotate
+    &bull; rc
+<img src="../img/aesKey8.png" class="imgCenter">
+Now that the key expansion is set up, we will move onto implementing the AES function.
+<img src="../img/aes1.png" class="imgCenter">          
+This function generates a random string of a given length to be used in key generation.
+                
+Parameters:
+    &bull; length - The integer that is the required length of the generated string.
+                
+The returned value is the generated string.
+<img src="../img/aes2.png" class="imgCenter">
+This function generates a random key for AES128 that is 128 bits or 16 bytes. The returned value is the generated key.
+                
+Other functions from this module used:
+    &bull; KeyGen
+<img src="../img/aes3.png" class="imgCenter">
+This function generates a random key for AES192 that is 192 bits or 24 bytes.
+                
+The returned value is the generated key.
+                
+Other functions from this module used:
+    &bull; KeyGen
+<img src="../img/aes4.png" class="imgCenter">
+This function generates a random key for AES256 that is 256 bits or 32 bytes.
+                
+The returned value is the generated key.
+                
+Other functions from this module used:
+    &bull; KeyGen
+<img src="../img/aes5.png" class="imgCenter">
+This function performs AES128 encryption on the given plaintext with the given key. It does this by expanding the key into 11 round keys and converting the text into 16 byte blocks of integers and adds padding if needed. Then for each block it performs 10 rounds of encryption on the block and XORs the block with the last round key. At the end if needed the padding is removed and the text is converted to a string.
+                
+Parameters:
+    &bull; key - A string that is the initial key to expand into the round keys.
+    &bull; message - A string that is the text to encrypt.
+    &bull; padding - A Boolean that specifies whether or not to remove padding. It has a default value of true.
+                
+The returned value is the encrypted text.
+                
+Other functions from this module used:
+    &bull; StrToInts
+    &bull; AESEncRound
+    &bull; ESEncLastRound
+    &bull; pad
+    &bull; IntsToStr
+<img src="../img/aes6.png" class="imgCenter">
+This function performs AES128 encryption on the given ciphertext with the given key. It does this by expanding the key into 11 round keys and converting the text into 16 byte blocks of integers and adding padding if needed. Then for each block it XORs the block with the first round key and performs 10 rounds of encryption. At the end the text is converted to a string.
+                
+Parameters:
+    &bull; key - A string that is the initial key to expand into the round keys.
+    &bull; message - A string that is the text to encrypt.
+    &bull; padding - A Boolean that specifies whether or not to remove padding. It has a default value of true.
+                
+The returned value is the encrypted text.
+                
+Other functions from this module used:
+    &bull; StrToInts
+    &bull; AESEncRound
+    &bull; AESEncLastRound
+    &bull; XOR
+    &bull; pad
+    &bull; IntsToStr
+<img src="../img/aes7.png" class="imgCenter">
+This function performs AES192 encryption on the given ciphertext with the given key. It does this by expanding the key into 13 round keys and converting the text into 16 byte blocks of integers and adding padding if needed. Then for each block it XORs the block with the first round key and performs 12 rounds of encryption. At the end the text is converted to a string.
+                
+Parameters:
+    &bull; key - A string that is the initial key to expand into the round keys.
+    &bull; message - A string that is the text to encrypt.
+    &bull; padding - A Boolean that specifies whether or not to remove padding. It has a default value of true.
+                
+The returned value is the encrypted text.
+                
+Other functions from this module used:
+    &bull; StrToInts
+    &bull; AESEncRound
+    &bull; AESEncLastRound
+    &bull; XOR
+    &bull; pad
+    &bull; IntsToStr
+<img src="../img/aes8.png" class="imgCenter">
+This function performs AES192 decryption on the given ciphertext with the given key. It does this by expanding the key into 13 round keys and converting the text into 16 byte blocks of integers. Then for each block it performs 12 rounds of decryption on the block and XORs the block with the last round key. At the end if needed the padding is removed and the text is converted to a string.
+                
+Parameters:
+    &bull; key - A string that is the initial key to expand into the round keys.
+    &bull; ciphertext - A string that is the text to decrypt.
+    &bull; padding - A Boolean that specifies whether or not to remove padding. It has a default value of true.
+                
+The returned value is the decrypted text.
+                
+Other functions from this module used:
+    &bull; StrToInts
+    &bull; AESDecFirstRound
+    &bull; AESDecRound
+    &bull; XOR
+    &bull; removePadding
+    &bull; IntsToStr
+<img src="../img/aes9.png" class="imgCenter">
+This function performs AES256 encryption on the given ciphertext with the given key. It does this by expanding the key into 15 round keys and converting the text into 16 byte blocks of integers and adding padding if needed. Then for each block it XORs the block with the first round key and performs 14 rounds of encryption. At the end the text is converted to a string.
+                
+Parameters:
+    &bull; key - A string that is the initial key to expand into the round keys.
+    &bull; message - A string that is the text to encrypt.
+    &bull; padding - A Boolean that specifies whether or not to remove padding. It has a default value of true.
+                
+The returned value is the encrypted text.
+                
+Other functions from this module used:
+    &bull; StrToInts
+    &bull; AESEncRound
+    &bull; AESEncLastRound
+    &bull; XOR
+    &bull; pad
+    &bull; IntsToStr
+<img src="../img/aes10.png" class="imgCenter">
+This function performs AES256 decryption on the given ciphertext with the given key. It does this by expanding the key into 15 round keys and converting the text into 16 byte blocks of integers. Then for each block it performs 14 rounds of decryption on the block and XORs the block with the last round key. At the end if needed the padding is removed and the text is converted to a string.
+                
+Parameters:
+    &bull; key - A string that is the initial key to expand into the round keys.
+    &bull; ciphertext - A string that is the text to decrypt.
+    &bull; padding - A Boolean that specifies whether or not to remove padding. It has a default value of true.
+                
+The returned value is the decrypted text.
+                
+Other functions from this module used:
+    &bull; StrToInts
+    &bull; AESDecFirstRound
+    &bull; AESDecRound
+    &bull; XOR
+    &bull; removePadding
+    &bull; IntsToStr
+<img src="../img/aes11.png" class="imgCenter">
+This function performs a round of AES encryption on the given block. It does this by running the block through SubBytes, ShiftRows, MixCols and XORing it with the round key.
+                    
+Parameters:
+    &bull; round_key - An array of integers that is the relevant round key.
+    &bull; block - An array of integers that is the block to perform the encryption round on.
+                
+The returned value is the result of running the encryption round on the given block with the given key.
+                    
+Other functions from this module used:
+    &bull; XOR
+    &bull; ShiftRows
+    &bull; SubBytes
+    &bull; MixCols
+<img src="../img/aes12.png" class="imgCenter">
+This function performs the last round of AES encryption on the given block. This is separate from the other rounds as it does not perform the mix columns operation. It does this by running the block through SubBytes, ShiftRows and XORs it with the round key.
+                    
+Parameters:
+    &bull; round_key - An array of integers that is the relevant round key.
+    &bull; block - An array of integers that is the block to perform the encryption round on.
+                
+The returned value is the result of running the encryption round on the given block with the given key.
+                    
+Other functions from this module used:
+    &bull; XOR
+    &bull; ShiftRows
+    &bull; SubBytes
+<img src="../img/aes13.png" class="imgCenter">
+This function performs a round of AES decryption on the given block. It does this by XORing it with the round key and running the result through InvMixCols, InvShiftRows and InvSubBytes.
+                
+Parameters:
+    &bull; round_key - An array of integers that is the relevant round key.
+    &bull; block - An array of integers that is the block to perform the decryption round on.
+                
+The returned value is the result of running the decryption round on the given block with the given key.
+                    
+Other functions from this module used:
+    &bull; XOR
+    &bull; InvShiftRows
+    &bull; InvSubBytes
+    &bull; InvMixCols
+<img src="../img/aes14.png" class="imgCenter">
+This function performs the first round of AES decryption on the given block. This is separate from the other rounds as it does not perform the inverse mix columns operation.It does this by XORing it with the round key and running the result through InvShiftRows and InvSubBytes.
+                    
+Parameters:
+    &bull; round_key - An array of integers that is the relevant round key.
+    &bull; block - An array of integers that is the block to perform the decryption round on.
+                
+The returned value is the result of running the decryption round on the given block with the given key.
+                
+Other functions from this module used:
+    &bull; XOR
+    &bull; InvShiftRows
+    &bull; InvSubBytes
+<img src="../img/aes15.png" class="imgCenter">
+This function XORs the elements of 2 given matrices.
+                
+Parameters:
+    &bull; mat1 - An array of integers that is one of the arrays to XOR.
+    &bull; mat2 - An array of integers that the other array to XOR.
+                
+The returned value is the matrix that is the XOR of the given 2.
+<img src="../img/aes16.png" class="imgCenter">
+This function converts a string to an array of AES blocks.
+                
+Parameters:
+    &bull; in_str - The string to convert to an array of arrays of integers.
+                
+The returned value is the array for the given string.
+<img src="../img/aes17.png" class="imgCenter">
+This function converts an array of AES block integers into a string.
+                
+Parameters:
+    &bull; in_arr - The array of arrays of integers to convert to a string.
+                
+The returned value is the string for the given array.
+<img src="../img/aes18.png" class="imgCenter">
+This function adds PKCS7 padding to the given array of matrices.
+                
+Parameters:
+    &bull; in_arr - An array of arrays of integers that is the array to add padding to.
+                
+The returned value is the padded array.
+<img src="../img/aes19.png" class="imgCenter">
+This function removes PKCS7 padding from the given array of matrices.
+                
+Parameters:
+    &bull; in_arr - An array of arrays of integers that is the array to remove padding from.
+                
+The returned value is the array with padding removed.
+<img src="../img/aes20.png" class="imgCenter">
+This function performs the sub bytes operation on a given matrix.
+                
+Parameters:
+    &bull; in_mat - An array of integers that is the matrix to perform the operation on.
+                
+The returned value is the result of performing the operation on the given matrix.
+<img src="../img/aes21.png" class="imgCenter">
+This function performs the inverse of the sub bytes operation on a given matrix.
+                
+Parameters:
+    &bull; in_mat - An array of integers that is the matrix to perform the operation on.
+                
+The returned value is the result of performing the operation on the given matrix.
+<img src="../img/aes22.png" class="imgCenter">
+This function performs the shift rows operation on a given matrix.
+                
+Parameters:
+    &bull; in_mat - An array if integers that is the matrix to perform the shift rows operation on.
+                
+The returned value is the result of performing the operation on the given matrix.
+<img src="../img/aes23.png" class="imgCenter">
+This function performs the inverse of the shift rows operation on a given matrix.
+                
+Parameters:
+    &bull; in_mat - An array if integers that is the matrix to perform the inverse shift rows operation on.
+                
+The returned value is the result of performing the operation on the given matrix.
+<img src="../img/aes24.png" class="imgCenter">
+This function performs the mix columns operation on a given matrix. It does this by iterating through the columns and applying the operation to each one.
+                
+Parameters:
+    &bull; in_mat - The matrix to perform the mix columns operation on.
+                
+The returned value is the result of the operation for the given matrix.
+                
+Other functions from this module used:
+    &bull; MixCol
+<img src="../img/aes24b.png" class="imgCenter" width="700">
+This function performs the inverse of the mix columns operation on a given matrix. It does this by iterating through the columns and applying the operation to each one.
+                
+Parameters:
+    &bull; in_mat - The matrix to perform the inverse mix columns operation on.
+                
+The returned value is the result of the operation for the given matrix.
+                
+Other functions from this module used:
+    &bull; InvMixCol
+<img src="../img/aes25.png" class="imgCenter">
+This function performs the mix column operation on a given column. It does this by multiplying the given column by the matrix below using GF(2<sup>8</sup>) field multiplication and addition.
+
+<table class="matrix">
+    <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+</table>
+
+Parameters:
+    &bull; in_col - This is an array of integers that is the column to perform the mix column operation on.
+                
+The returned value is the result of performing the operation on the column.
+                
+Other functions used from this module:
+    &bull; mult
+<img src="../img/aes26.png" class="imgCenter">
+This function performs the inverse of the mix column operation. It does this by multiplying the given column by the matrix below using GF(2<sup>8</sup>) field multiplication and addition.
+
+<table class="matrix">
+    <tr>
+        <td>14</td>
+        <td>11</td>
+        <td>13</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>14</td>
+        <td>11</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>9</td>
+        <td>14</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>13</td>
+        <td>9</td>
+        <td>14</td>
+    </tr>
+</table>
+
+Parameters:
+    &bull; in_col - This is an array of integers that is the column to perform the inverse mix column operation on.
+                
+The returned value is the result of performing the operation on the column.
+                
+Other functions used from this module:
+    &bull; mult
+<img src="../img/aes27.png" class="imgCenter">
+This function multiplies the 2 given numbers in the GF(2^8) field using a lookup table.
+                
+Parameters:
+    &bull; num1 - An integer that is one of the numbers to multiply by (it can only be 2, 3, 9, 11, 13 or 14).
+    &bull; num2 - An integer that is the other number to multiply by.
+                        
+The returned value is the product of the given numbers.
+<img src="../img/aes28.png" class="imgCenter">
+<img src="../img/aes29.png" class="imgCenter">
+
+<i>Written by <b>Abby</b></i>
+
+</p>
+</div>
+    </body>
+</div>
+
+<footer>
+    <div class="nextButton">
+        <a href="programRsa.html" class="three-d">
+            RSA Python <<span class="three"><span class="front">
+                RSA Python  <</span><span class="back">
+                    RSA Python  <</span>
+                        </span>
+        </a>
+        <a href="programEnigma.html" class="three-d">
+            > Enigma Python
+            <span class="three"><span class="front">> Enigma Python</span><span class="back">> Enigma Python</span></span>
+        </a>
+    </div>
+</footer>
+

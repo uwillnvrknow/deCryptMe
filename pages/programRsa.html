@@ -1,0 +1,439 @@
+<head>
+    <title>RSA in Python</title>
+    <link rel="stylesheet" href="https://use.typekit.net/yhe5mma.css">
+    <link rel="stylesheet" type="text/css" id="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/division.css">
+    <link rel="stylesheet" type="text/css" href="../css/mediaquery.css">
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/browsers.js"></script>
+</head>
+
+<div class="header">
+    <div class="typewriter">
+        <h1>RSA in Python</h1>
+    </div>
+</div>
+
+<div class="logo">
+    <a href="../index.html">
+        <img src="../img/Final-Logo.png" height="100px">
+    </a>
+</div>
+
+<ul class="navigation">
+    <li><a href="../index.html" class="three-d">
+            Home
+            <span class="three"><span class="front">Home</span><span class="back">Home</span></span>
+        </a></li>
+    <li><a href="about.html" class="three-d">
+            About
+            <span class="three"><span class="front">About</span><span class="back">About</span></span>
+        </a></li>
+    <li><a href="#Resources" class="three-d">
+            Resources
+            <span class="three"><span class="front">Resources</span><span class="back">Resources</span></span>
+        </a>
+        <ul>
+            <li><a href="history.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a>
+                <ul class="side-dropdown">
+                    <li><a href="enigma.html" class="three-d">
+                            Enigma
+                            <span class="three"><span class="front">Enigma</span><span class="back">Enigma</span></span>
+                        </a></li>
+                    <li><a href="ww2.html" class="three-d">
+                            WWII
+                            <span class="three"><span class="front">WWII</span><span class="back">WWII</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+                </a>
+                <ul class="side-dropdown1">
+                    <li><a href="cryptowars1.html" class="three-d">
+                            The Beginning
+                            <span class="three"><span class="front">The Beginning</span><span class="back">The
+                                    Beginning</span></span>
+                        </a></li>
+                    <li><a href="cryptowars2.html" class="three-d">
+                            The Internet
+                            <span class="three"><span class="front">The Internet</span><span class="back">The
+                                    Internet</span></span>
+                        </a></li>
+                    <li><a href="cryptowars3.html" class="three-d">
+                            U.S. Government
+                            <span class="three"><span class="front">U.S. Government</span><span class="back">U.S.
+                                    Government</span></span>
+                        </a></li>
+                    <li><a href="cryptowars4.html" class="three-d">
+                            Cracking DES
+                            <span class="three"><span class="front">Cracking DES</span><span class="back">Cracking
+                                    DES</span></span>
+                        </a></li>
+                    <li><a href="cryptowars5.html" class="three-d">
+                            Ongoing War
+                            <span class="three"><span class="front">Ongoing War</span><span class="back">Ongoing
+                                    War</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="cryptosystem.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+            </a>
+            <ul class="side-dropdown2">
+                <li><a href="symmetricKey.html" class="three-d">
+                        Symmetric Key
+                        <span class="three"><span class="front">Symmetric Key</span><span class="back">Symmetric Key</span></span>
+                    </a></li>
+                    <li><a href="asymmetricKey.html" class="three-d">
+                        Asymmetric Key
+                        <span class="three"><span class="front">Asymmetric Key</span><span class="back">Asymmetric Key</span></span>
+                    </a></li>
+                <li><a href="principles.html" class="three-d">
+                        Kerckhoff & Shannon
+                        <span class="three"><span class="front">Kerckhoff & Shannon</span><span class="back">Kerckhoff & Shannon</span></span>
+                    </a></li>
+            </ul>
+        </li>
+            <li><a href="division.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a>
+                <ul class="side-dropdown3">
+                    <li><a href="euclid.html" class="three-d">
+                            Euclid's Algorithm
+                            <span class="three"><span class="front">Euclid's Algorithm</span><span class="back">Euclid's
+                                    Algorithm</span></span>
+                        </a></li>
+                    <li><a href="bezout.html" class="three-d">
+                            Bezout's Identity
+                            <span class="three"><span class="front">Bezout's Identity</span><span class="back">Bezout's
+                                    Identity</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="rsa.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+                </a>
+                <ul class="side-dropdown4">
+                    <li><a href="primes.html" class="three-d">
+                            Primes
+                            <span class="three"><span class="front">Primes</span><span class="back">Primes</span></span>
+                        </a></li>
+                    <li><a href="modularArithmetic.html" class="three-d">
+                            Modular Arithmetic
+                            <span class="three"><span class="front">Modular Arithmetic</span><span class="back">Modular
+                                    Arithmetic</span></span>
+                        </a></li>
+                    <li><a href="chineseRemainder.html" class="three-d">
+                            Chinese Remainder Theorem
+                            <span class="three"><span class="front">Chinese Remainder Theorem</span><span
+                                    class="back">Chinese Remainder Theorem</span></span>
+                        </a></li>
+                        <li><a href="euler.html" class="three-d">
+                            Euler's Theorem
+                            <span class="three"><span class="front">Euler's Theorem</span><span
+                                    class="back">Euler's Theorem</span></span>
+                        </a></li>
+                </ul>
+            </li>
+            <li><a href="ellipticCurve.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+            </a>
+            <ul class="side-dropdown5">
+                
+            </ul>
+        </li>
+            <li><a href="#" class="three-d">
+                Algorithms
+                <span class="three"><span class="front">Algorithms</span><span class="back">Algorithms</span></span>
+            </a>
+            <ul class="side-dropdown6">
+                <li><a href="aes.html" class="three-d">
+                    AES
+                    <span class="three"><span class="front">AES</span><span class="back">AES</span></span>
+                </a></li>
+                <li><a href="diffieHellman.html" class="three-d">
+                        Diffie Hellman
+                        <span class="three"><span class="front">Diffie Hellman</span><span class="back">Diffie Hellman</span></span>
+                    </a></li>
+                <li><a href="shamir.html" class="three-d">
+                        Shamir's Secret
+                        <span class="three"><span class="front">Shamir's Secret</span><span class="back">Shamir's Secret</span></span>
+                    </a></li>
+                    <li><a href="shor.html" class="three-d">
+                        Shor's Algorithm
+                        <span class="three"><span class="front">Shor's Algorithm</span><span class="back">Shor's Algorithm</span></span>
+                    </a></li>
+            </ul>
+            </li>
+            <li><a href="#" class="three-d">
+                Programming
+                <span class="three"><span class="front">Programming</span><span class="back">Programming</span></span>
+            </a>
+            <ul class="side-dropdown7">
+                <li><a href="branchlessProgramming.html" class="three-d">
+                        Branchless Programming
+                        <span class="three"><span class="front">Branchless Programming</span><span class="back">Branchless Programming</span></span>
+                    </a></li>
+                    <li><a href="programRsa.html" class="three-d">
+                        RSA in Python
+                        <span class="three"><span class="front">RSA in Python</span><span class="back">RSA in Python</span></span>
+                    </a></li>
+                    <li><a href="programAES.html" class="three-d">
+                        AES in Python
+                        <span class="three"><span class="front">AES in Python</span><span class="back">AES in Python</span></span>
+                    </a></li>
+                    <li><a href="programEnigma.html" class="three-d">
+                        Enigma in Python
+                        <span class="three"><span class="front">Enigma in Python</span><span class="back">Enigma in Python</span></span>
+                    </a></li>
+                    <li><a href="quantum.html" class="three-d">
+                        Quantum
+                        <span class="three"><span class="front">Quantum</span><span class="back">Quantum</span></span>
+                    </a></li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#Quizzes" class="three-d">
+            Quizzes
+            <span class="three"><span class="front">Quizzes</span><span class="back">Quizzes</span></span>
+        </a>
+        <ul>
+            <li><a href="historyQuiz.html" class="three-d">
+                    History
+                    <span class="three"><span class="front">History</span><span class="back">History</span></span>
+                </a></li>
+            <li><a href="cryptoWarsQuiz.html" class="three-d">
+                    CryptoWars
+                    <span class="three"><span class="front">CryptoWars</span><span class="back">CryptoWars</span></span>
+            </a></li>
+            <li><a href="cryptosystemsQuiz.html" class="three-d">
+                Cryptosystems
+                <span class="three"><span class="front">Cryptosystems</span><span class="back">Cryptosystems</span></span>
+        </a></li>
+            <li><a href="divisionQuiz.html" class="three-d">
+                    Division
+                    <span class="three"><span class="front">Division</span><span class="back">Division</span></span>
+                </a></li>
+            <li><a href="rsaQuiz.html" class="three-d">
+                    RSA
+                    <span class="three"><span class="front">RSA</span><span class="back">RSA</span></span>
+            </a></li>
+            <li><a href="ellipticCurveQuiz.html" class="three-d">
+                Elliptic-Curve
+                <span class="three"><span class="front">Elliptic-Curve</span><span class="back">Elliptic-Curve</span></span>
+        </a></li>
+            <li><a href="algorithmsQuiz.html" class="three-d">
+                Other Algorithms
+                <span class="three"><span class="front">Other Algorithms</span><span class="back">Other Algorithms</span></span>
+        </a></li>
+        <li><a href="quantumQuiz.html" class="three-d">
+            Quantum Quiz
+            <span class="three"><span class="front">Quantum Quiz</span><span class="back">Quantum Quiz</span></span>
+    </a></li>
+        </ul>
+    </li>
+    <li><a href="support.html" class="three-d">
+            Support
+            <span class="three"><span class="front">Support</span><span class="back">Support</span></span>
+        </a></li>
+    <li><a href="contact.html" class="three-d">
+            Contact
+            <span class="three"><span class="front">Contact</span><span class="back">Contact</span></span>
+        </a></li>
+</ul>
+
+<div class="box">
+    <body>
+        <h2>Implementation of RSA in Python</h2>
+        
+        <div class="text-box">
+            <p>To implement RSA within python, we have put together a tutorial to talk you though how to code an RSA function:
+<img src="../img/rsacode1.png" class="imgCenter" width="400">
+This function generates a pair of random RSA keys with a modulus of nBits bits. It does this by generating 2 random primes so that their product (the modulus) has the required size and the primes vary in size by a random number of bits. It then randomly generates the public key's power and increments it until it is coprime to the product of p-1 and q-1 where p and q are the primes generated earlier. Finallly it calculates the private key's power by finding the multiplicative inverse of e (the public key's power) mod (p-1)*(q-1). It returns the public key's power, the private key's power and the modulus in an array.
+                
+Parameters:
+    &bull; nBits - An integer that specifies the required number of bits for the modulus. If unspecified it has a default value of 2048 and if too small (less than 8) then it is replaced by this value.
+                
+The returned value is an array containing the public key's power, the private key's power and the modulus respectively.
+                
+Other functions from this module used:
+    &bull; GetRandomPrime
+    &bull; hcf
+    &bull; inv_mod
+<img src="../img/rsacode2.png" class="imgCenter" width="500">
+This function generates a random prime that is nBits bits in size. For small primes (at most 256 bits) it does this by repeatedly generating a random odd number of the required size and checking if it's prime. For larger primes it does this by generating a random range (of size 2^16) of numbers of the required size and finding the first prime in this range.
+                
+Parameters:
+    &bull; nBits - An integer specifying the size of the prime to be generated in bits. If unspecified it has a default value of 1024.
+                
+The returned value is the generated prime.
+                
+Other functions from this module used:
+    &bull; sieve
+<img src="../img/rsacode3.png" class="imgCenter" width="500">
+
+This function encrypts a given string with the RSA key (power and modulus) provided. It applies padding to the string first if required and will remove the end of the string if it is too long to be encrypted by the modulus without loss of information.
+                
+Parameters:
+    &bull; text - A string containing the text to be encrypted.
+    &bull; power - An integer that is the RSA key's power.
+    &bull; modulus - An integer that is the RSA key's modulus.
+    &bull; padding - A Boolean specifying whether or not to add padding. If unspecified it will have a default value of True.
+                
+The returned value is the encrypted string.
+                
+Other functions from this module used:
+    &bull; numBits
+    &bull; pad
+    &bull; StrToInt
+    &bull; power_mod
+    &bull; IntToStr
+<img src="../img/rsacode4.png" class="imgCenter" width="600">
+This function decrypts the given string with the RSA key (power and modulus) provided. It removes any padding after the decryption if required.
+                
+Parameters:
+    &bull; text - A string containing the text to be decrypted.
+    &bull; power - An integer that is the RSA key's power.
+    &bull; modulus - An intger that is the RSA key's modulus.
+    &bull; padding - A Boolean specifying whether or not to remove padding. If unspecified it will have a default value of True.
+                
+The returned value is the decrypted string.
+                
+Other functions in this module used:
+    &bull; numBits
+    &bull; StrToInt
+    &bull; power_mod
+    &bull; IntToStr
+    &bull; removePadding
+<img src="../img/rsacode5.png" class="imgCenter" width="600">
+This function adds PKCS1 v1.5 padding to the given text so that the text is the required block size. That is it adds padding starting with the hex 0002 and ending with the hex ffff to the begining of the string. The rest of the padding is random and does not contain the hex sequence ffff.
+                
+Parameters:
+    &bull; text - A string containing the text to be padded.
+    &bull; block_size - An integer specifying the required size of the padded text.
+                
+The returned value is the padded text.
+<img src="../img/rsacode6.png" class="imgCenter" width="450">
+This function removes PKCS1 padding from the given text. If it does not have valid padding the function returns an empty string.
+                
+Parameters:
+    &bull; text - A string containing the text to remove the padding from.
+                
+The returned value is the text with the padding removed or an empty string.
+<img src="../img/rsacode7.png" class="imgCenter" width="450">
+This function turns a string into an integer. It does this by iterating through each character in the string, converting it to its extended ASCII value and adding this to a running total by first multiplying by 256 to the power of the number of places from the end of the string the character is. This assigns each string a unique integer.
+                
+Parameters:
+    &bull; text - The string to be turned into an integer.
+                
+The returned value is the integer produced from the string.
+<img src="../img/rsacode8.png" class="imgCenter" width="600">
+This function turns an integer into a string. It does this by finding the remainder of the current number (initialised to the given integer) divided by 256, adding the character relating to this remainder (using extended ASCII) to the begining of a string (initialised to an empty string) and then replaces the current number with itself divided (integer division) by 256. It repeats this process until a string of the required length is produced.
+                
+Parameters:
+    &bull; number - The integer to be turned into a string.
+    &bull; block_size - An integer specifying the required length of the produced string.
+                
+The returned value is the string produced from the number.
+<img src="../img/rsacode9.png" class="imgCenter" width="500">
+This function calculates the number of bits required to represent a given integer.
+                
+Parameters:
+    &bull; number - The integer to calculate the number of bits for.
+                
+The returned value is the number of required bits.
+<img src="../img/rsacode10.png" class="imgCenter" width="500">
+This function calculates a number to a given power modulo (the remainder when divided by) a given modulus. It does this efficiently by repeatedly squaring the given number, if the current power number is odd it multiplies a running value (initialised to 1) by the current squared value and divides the current power value by 2 (integer division). Every operation is performed in modular arithmetic (using the remainders when divided by the given modulus) to improve efficiency.
+                
+Parameters:
+    &bull; base - An integer that is the base for the exponentiation.
+    &bull; power - An integer that is the power to raise base to.
+    &bull; modulus - An integer that is the number to divide by to calculate the remainders.
+                
+The returned value is base<sup>power</sup> (mod modulus).
+<img src="../img/rsacode11.png" class="imgCenter" width="500">
+This function calculates the multiplcative inverse of a given number with a given modulus (when a number and its inverse are multiplied the remainder when divided by the modulus is 1). It does this using the extended Euclidean algorithm to find 2 numbers a and b such that a * number + b * modulus = 1. In this formula the number a is the inverse of number for the given modulus. This function assumes that the inverse exists (i.e. the given number and modulus are coprime).
+                
+Parameters:
+    &bull; number - The integer to find the multiplicative inverse of.
+    &bull; modulus - The integer that is the modulus to find the inverse of number for.
+                
+The returned value is the multiplicative inverse of the given number for the given modulus.
+                
+Other functions from this module used:
+    &bull; extendedhcf
+<img src="../img/rsacode12.png" class="imgCenter" width="500">
+This function calculates the highest common factor of 2 given integers. It does this using the Euclidean algorithm.
+                
+Parameters:
+    &bull; num1 - One of the integers to calculate the highest common factor of.
+    &bull; num2 - The other integer to calculate the highest common factor of.
+                
+The returned value is the highest common factor of the given numbers.
+<img src="../img/rsacode13.png" class="imgCenter" width="450">
+This function calculates the highest common factor of 2 given integers and finds a linear combination of the 2 numbers that equals this value. It does this using the extended Euclidean algorithm.
+                
+Parameters:
+    &bull; num1 - One of the integers to calculate the highest common factor of.
+    &bull; num2 - The other integer to calculate the highest common factor of.
+                
+The returned value is an array of integers [a,b,c] where a * num1 + b * num2 = c and c is the highest common factor of num1 and num2.
+<img src="../img/rsacode14.png" class="imgCenter" width="600">
+This function tests a given integer for primality. It does this by a Fermat test with base 2 and a 40 round Miller-Rabin test. This function is probabilistic but the probability of failure is negligible.
+                
+Parameters:
+    &bull; number - The integer to test for primality.
+                
+The returned value is a Boolean specifying whether or not the given number is prime.
+<img src="../img/rsacode15.png" class="imgCenter" width="500">
+
+This function creates an array of all primes less than 2<sup>16</sup>.
+<img src="../img/rsacode16.png" class="imgCenter" width="500">
+
+This function sieves a given range for multiples of small prime numbers (less than 2<sup>16</sup>) and then finds the first prime in the remaining numbers. It returns a 0 if there are no primes in the given range.
+                
+Parameters:
+    &bull; lower_bound - The smallest integer in the given range.
+    &bull; size - The number of integers in the given range.
+                
+The returned value is the first prime in the range or 0 if there are no primes in the range.
+<img src="../img/rsacode17.png" class="imgCenter" width="500">
+                
+This array of small prime numbers is used by the sieve function and is stored as a variable so that it does not need to be generated everytime a new large prime is needed.
+
+sPrimes=smallPrimes()
+            
+<i>Written by <b>Abby</b></i>
+
+</p>
+</div>
+    </body>
+</div>
+
+<footer>
+    <div class="nextButton">
+        <a href="branchlessProgramming.html" class="three-d">
+            Branchless Programming <<span class="three"><span class="front">
+                Branchless Programming  <</span><span class="back">
+                    Branchless Programming  <</span>
+                        </span>
+        </a>
+        <a href="programAES.html" class="three-d">
+            > AES Python
+            <span class="three"><span class="front">> AES Python</span><span class="back">> AES Python</span></span>
+        </a>
+    </div>
+</footer>
+
