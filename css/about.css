@@ -1,0 +1,184 @@
+h1{
+    font-family: "bungee", sans-serif;
+    font-size: 2em;
+}
+h2{
+font-family: fira-mono, monospace;
+font-weight: 700;
+font-style: normal;
+}
+
+html,body{
+    overflow-x: visible;
+}
+
+body{
+    background: black;
+    margin: 0;
+    padding: 2rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 50px;
+    background: black;
+    color: white;   
+    width: 96%;
+}
+
+.header a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.typewriter h1{
+    overflow: hidden;
+    border-right: .10em solid white;
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    animation:
+        typing 4s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+    from {max-width: 0}
+    to {max-width: 100%}
+
+}
+
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50%{border-color:white;}
+}
+
+
+.navigation{
+    justify-content: center;
+    list-style: none;
+    background-color: black;
+    font-family: fira-mono, monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2em;
+    display: block;
+    margin: 10px auto 10px;
+    width:610px;
+    z-index: 9999;
+    
+}
+
+.navigation > li {
+    display:inline;
+    float:left;	
+    border-right:1px solid black;
+    position: relative;
+    overflow: visible;
+    z-index: 9999;	
+  }
+
+  .navigation > li:last-child {
+    border-right: none;
+  }
+
+  .navigation li a {
+    color: #fff;
+	display: block;
+	text-decoration: none;	 
+	font-smoothing: antialiased;
+      line-height: 20px;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 15px 30px 15px 31px;		
+  }
+
+ul,li{
+    list-style: none outside none;
+}
+
+.three-d {   
+    perspective: 200px;   
+    transition: all .07s linear;
+    position: relative;
+  }
+  
+  .three-d:not(.active):hover {
+    cursor: pointer;
+  }
+  
+  .three-d:not(.active):hover .three, 
+  .three-d:not(.active):focus .three {   
+    transform: translateZ(-25px) rotateX(90deg);
+  }
+  
+  .three {  
+    transition: all .3s ease-out;   
+    transform: translatez(-25px);   
+    transform-style: preserve-3d;   
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .front {  
+    transform: rotatex(0deg) translatez(25px);
+  }
+  
+  .back {   
+    transform: rotatex(-90deg) translatez(25px);
+    color: white;
+  }
+  
+  .front, .back {
+    display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:black;
+      padding: 15px 30px 15px 31px;	
+      color: white;	 
+      pointer-events: none;   
+      box-sizing: border-box;
+  }
+
+.navigation li .active .front,
+.navigation li .active .back,
+.navigation  li a:hover .front,
+.navigation  li a:hover .back {
+  background-color: white;   
+  background-size: 5px 5px;
+  background-position: 0 0, 30px 30px; 
+    color: black;
+   
+}
+.navigation  ul {
+  position: absolute;
+  left: -40px;
+    text-align: left;
+	line-height: 40px;
+	font-size: 10px;
+	width: 200px; 
+  transition: all 0.3s ease-in;   
+  transform-origin: 0px 0px;  
+  transform: rotateX(-90deg);   
+	backface-visibility: hidden;
+}
+.navigation  > li:hover ul {
+  display: block;  
+    transform: rotateX(0deg);
+}

@@ -1,0 +1,64 @@
+.container {
+    margin: 10px;
+    width: 400px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 50px;
+    font-family: fira-mono, monospace;
+    font-size: 18px;
+}
+
+.submit {
+    font-family: fira-mono, monospace;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    margin: 3px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* display: inline-block; */
+    border: 1px solid grey;
+    box-sizing: border-box;
+  }
+
+  .computer {
+    font-family: fira-mono, monospace;
+    border: 2px solid #dedede;
+    background-color:white;
+    color: #4caf50;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.computererror {
+    font-family: fira-mono, monospace;
+    border: 2px solid #dedede;
+    background-color:white;
+    color: red;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.euclid{
+    float: right;
+    margin: 0 2%;
+}
+
+.calculation{
+    text-align: center;
+}

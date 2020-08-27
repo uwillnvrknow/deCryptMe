@@ -1,0 +1,112 @@
+.faded {
+  color: grey;
+  font-family: fira-mono, monospace;
+}
+#quiz-counter {
+  color: black;
+  font-family: fira-mono, monospace;
+}
+
+.quiz-container {
+    padding: 0.25em;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.quiz-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-results-screen,
+#quiz-counter {
+    text-align: center;
+}
+
+.question {
+    font-size: 1.25em;
+    font-family: fira-mono, monospace;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+    font-family: fira-mono, monospace;
+}
+
+.answers a {
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    background: #fff;
+    font-family: fira-mono, monospace;
+}
+
+.answers a.correct {
+    background: #090;
+}
+.answers a.incorrect {
+    background: #c00;
+}
+
+.answers a.correct,
+.answers a.incorrect {
+    color: #fff;
+}
+
+#quiz-controls {
+    background: orange;
+    color: #111;
+    padding: 0.25em 0.5em 0.5em;
+    text-align: center;
+    font-family: fira-mono, monospace;
+}
+
+#quiz-response {}
+#quiz-results {
+    font-family: fira-mono, monospace;
+    font-size: 1.25em;
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: black;
+    color: #fff;
+    font-family: fira-mono, monospace;
+    
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button:hover {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: white;
+    color: black;
+    font-family: fira-mono, monospace;
+    
+}
+
+#quiz-buttons a {
+    background: #fff;
+    color: #333;
+}
+
+/* Quiz State Overrides */
+
+.quiz-results-state #quiz-controls {
+    background: none;
+    padding: 0;
+}
+.quiz-results-state #quiz-buttons a {
+  background: black;
+  color: #fff;
+}
+
+.quiz-results-state #quiz-buttons a:hover {
+  background: white;
+    color: black;
+}
