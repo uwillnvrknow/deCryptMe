@@ -35,7 +35,7 @@ class Query:
     """
     database = 'webpage'
     collection = None
-    payloadKey = "ERROR"
+    payloadKey = "payloadKeyNotInherited"
 
     def __init__(self, client_in):
         self.client = client_in
@@ -77,9 +77,9 @@ class QueryMP3(QueryImage):
 
 
 
-class QueryHTML(Query):
+class QueryHTML(QueryImage):
     collection = 'html'
-    payLoadKey = 'html'
+    payloadKey = 'html'
 
 class QueryCSS(Query):
     collection = 'css'
