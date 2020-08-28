@@ -101,7 +101,7 @@ body {
   display: block;
   margin: 10px auto;
   width: 800px;
-  z-index: 9999;
+  z-index: 99999;
   position: relative;
   flex-shrink: 0;
 }
@@ -112,11 +112,12 @@ body {
   border-right: 1px solid black;
   position: relative;
   overflow: visible;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .navigation>li:last-child {
   border-right: none;
+  z-index: 99999;
 }
 
 .navigation li a {
@@ -129,26 +130,31 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   padding: 15px 30px 15px 31px;
+  z-index: 99999;
 }
 
 ul,
 li {
   list-style: none outside none;
+  z-index: 99999;
 }
 
 .three-d {
   perspective: 200px;
   transition: all .07s linear;
   position: relative;
+  z-index: 99999;
 }
 
 .three-d:not(.active):hover {
   cursor: pointer;
+  z-index: 99999;
 }
 
 .three-d:not(.active):hover .three,
 .three-d:not(.active):focus .three {
   transform: translateZ(-25px) rotateX(90deg);
+  z-index: 99999;
 }
 
 .three {
@@ -162,15 +168,18 @@ li {
   display: block;
   width: 100%;
   height: 100%;
+  z-index: 99999;
 }
 
 .front {
   transform: rotatex(0deg) translatez(25px);
+  z-index: 99999;
 }
 
 .back {
   transform: rotatex(-90deg) translatez(25px);
   color: white;
+  z-index: 99999;
 }
 
 .front,
@@ -186,6 +195,7 @@ li {
   color: white;
   pointer-events: none;
   box-sizing: border-box;
+  z-index: 99999;
 }
 
 .navigation li .active .front,
@@ -196,6 +206,7 @@ li {
   background-size: 5px 5px;
   background-position: 0 0, 30px 30px;
   color: black;
+  z-index: 99999;
 
 }
 
@@ -210,11 +221,13 @@ li {
   transform-origin: 0px 0px;
   transform: rotateX(-90deg);
   backface-visibility: hidden;
+  z-index: 99999;
 }
 
 .navigation>li:hover ul {
   display: block;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown {
@@ -225,12 +238,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown {
   display: inline-block;
   visibility: visible;
   transform: rotateY(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown1 {
@@ -241,12 +256,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown1 {
   display: inline-block;
   visibility: visible;
   transform: rotateY(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown2 {
@@ -257,12 +274,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown2 {
   display: inline-block;
   visibility: visible;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown3 {
@@ -273,12 +292,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown3 {
   display: inline-block;
   visibility: visible;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown4 {
@@ -289,12 +310,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown4 {
   display: inline-block;
   visibility: visible;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown5 {
@@ -305,12 +328,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown5 {
   display: inline-block;
   visibility: visible;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown6 {
@@ -321,12 +346,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown6 {
   display: inline-block;
   visibility: visible;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .navigation ul .side-dropdown7 {
@@ -337,12 +364,14 @@ li {
   visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease-in;
+  z-index: 99999;
 }
 
 .navigation>li ul li:hover .side-dropdown7 {
   display: inline-block;
   visibility: visible;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 
 .logo {
