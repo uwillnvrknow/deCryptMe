@@ -1,7 +1,6 @@
 ![deCrypt Me logo](./img/Final-Logo.png)
 
 ## Table of contents
----
 - [Technologies](#Technologies)
 - [Introduction](#Introduction)
 - [Requirements](#Requirements)
@@ -11,7 +10,6 @@
 
 
 ## Technologies
----
 ### Communications
 - Teams
 - Discord
@@ -30,19 +28,16 @@
 
 
 ## Introduction
----
 There is no singular location to find out about topics surrounding cryptography. deCrypt Me merges everything together to give you all the information you would need into a nice and consice location.
 
 
 ## Requirements
----
 A browser with JavaScript enabled. If you are running a JavaScript blocking plug-in such as NoScript then please trust uwillnvrknow.github.io.
 
 deCrypt Me has been designed to support most browsers.
 
 
 ## Features
----
 The site features many different aspects that will allow you to learn about cryptography. This includes:
 - Different routes catered to your specific skill set.
 - Audio recordings to complement some sections on the site.
@@ -52,7 +47,6 @@ The site features many different aspects that will allow you to learn about cryp
 
 
 ## Installation and Usage
----
 No installation required! Just boot up a browser and [visit us](https://uwillnvrknow.github.io/deCryptMe/index.html)
 
 Our landing page will offer you four options:
@@ -77,7 +71,6 @@ Where sources have been used to create articles, they have been listed using Har
 
 
 ## Collaborators
----
 - Jane - Front-end developer and Maths
 
 - Harry - Front-end developer and History
